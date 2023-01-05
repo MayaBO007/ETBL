@@ -6,6 +6,7 @@
     "theme_color": "black",
     "start_url": "index.html",
     "scope": "/",
+    "id": "/v2/public/experiment/ET_BL/index.html",
     "description": "Game",
     "icons": [
         {
