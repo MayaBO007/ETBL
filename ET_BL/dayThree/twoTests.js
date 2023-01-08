@@ -28,8 +28,8 @@ async function start2tests() {
                         document.getElementById("iframe-element").src = "";
                         document.getElementById("redButton").style.display = "inline";
                         document.getElementById("blueButton").style.display = "inline";
-                        document.getElementById("redButton").style.left = "80%";
-                        document.getElementById("blueButton").style.left = "0%";
+                        document.getElementById("redButton").style.left = "0%";
+                        document.getElementById("blueButton").style.left = "80%";
                         let startSwitchTest = async function () {
                             let endSwitch = await startIntervalSwitch();
                             if (endSwitch == "done2") {
@@ -41,8 +41,8 @@ async function start2tests() {
                                     document.getElementById("iframe-element2").style.display = "inline";
                                 }, 1000)
                                 setTimeout(() => {
-                                    document.getElementById("blueButton").style.left = "80%";
-                                    document.getElementById("redButton").style.left = "0%";
+                                    document.getElementById("blueButton").style.left = "0%";
+                                    document.getElementById("redButton").style.left = "80%";
                                     document.getElementById("startAfterSwitchTestButton").style.display = "none";
                                     document.getElementById("iframe-element2").style.display = "none";
                                     document.getElementById("iframe-element2").src = "";
