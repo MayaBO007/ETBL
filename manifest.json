@@ -4,8 +4,8 @@
     "display": "standalone",
     "background_color": "#5900b3",
     "theme_color": "black",
-    "start_url": "index.html",
-    "scope": "/",
+    "start_url": "https://experiments.schonberglab.org/v2/public/experiment/ET_BL/index.html",
+    "scope": "https://experiments.schonberglab.org/v2/public/experiment/ET_BL/",
     "description": "Game",
     "icons": [
         {
