@@ -192,6 +192,8 @@
     animation-fill-mode: backwards;
     animation-iteration-count: infinite;
     display: none;
+    animation-delay: 100ms;
+
     /*animation-iteration-count: infinite;
     animation-fill-mode: initial;*/
 }
@@ -220,6 +222,8 @@
     animation-fill-mode: backwards;
     animation-iteration-count: infinite;
     display: none;
+    animation-delay: 100ms;
+
 }
 
 @keyframes redCarMoving {
@@ -248,6 +252,8 @@
     animation-fill-mode: backwards;
     animation-iteration-count: infinite;
     display: none;
+    animation-delay: 100ms;
+
 }
 
 @keyframes yellowCarMoving {

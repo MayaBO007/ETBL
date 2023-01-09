@@ -143,7 +143,7 @@ async function trainingFirstDay() {
                                 breaks++;
                             }
                         };
-                    }, 0.9 * 1000);// (Maximal carSpeed)*1000
+                    }, 1000);// (Maximal carSpeed)*1000
 
                 let sessionTimerFirstDay = setTimeout(function timeCount() {
                     platform.saveSession(responsesFirstData, false);
