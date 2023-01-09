@@ -185,7 +185,7 @@
     width: 4%;
     height: 20%;
     left: 48%;
-    top: 110%;
+    top: 130%;
     animation-play-state: paused;
     position: absolute;
     animation-name: blueCarMoving;
@@ -213,7 +213,7 @@
     width: 4%;
     height: 20%;
     left: 48%;
-    top: 110%;
+    top: 130%;
     animation-play-state: paused;
     position: absolute;
     animation-name: redCarMoving;
@@ -240,7 +240,7 @@
     width: 4%;
     height: 20%;
     left: 48%;
-    top: 110%;
+    top: 130%;
     animation-play-state: paused;
     position: absolute;
     animation-name: yellowCarMoving;
