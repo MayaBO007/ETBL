@@ -8,7 +8,7 @@
     "description": "Game",
     "icons": [
         {
-            "src": "icons/aandroid-icon-36x36.png",
+            "src": "icons/android-icon-36x36.png",
             "sizes": "36x36",
             "type": "image\/png"
         },
