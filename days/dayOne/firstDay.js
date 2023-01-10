@@ -128,7 +128,7 @@ async function trainingFirstDay() {
                                 }, carSpeed * 1000);
                             };
 
-                            if (countingCars >= 35 && breaks <= 3) {
+                            if (countingCars >= 10 && breaks <= 3) {
                                 reset_redCar();
                                 reset_blueCar();
                                 reset_airplane();
