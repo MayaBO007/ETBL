@@ -54,6 +54,7 @@ function randColorDev() {
     return car
 };
 
+//Random count array
 const countArry = [17, 18, 19, 20, 21, 22, 23];
 const choseCount = Array.from({ length: 1000 });
 for (let i = 0; i < choseCount.length; i++) {
