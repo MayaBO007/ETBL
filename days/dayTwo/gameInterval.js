@@ -113,22 +113,28 @@ async function startTraining() {
                                 }, carSpeed * 1000);
                             };
 
-                        };
-                        if (countingCars >= 210 && breaks <= 3) {
-                            clearInterval(sessionInterval);
-                            reset_redCar();
-                            reset_blueCar();
-                            reset_airplane();
-                            document.getElementById("gameScreen").style.display = "none";
-                            document.getElementById("redButton").style.display = "none";
-                            document.getElementById("blueButton").style.display = "none";
-                            document.getElementById("break").style.display = "inline";
-                            document.getElementById("secCountdown").style.display = "inline";
-                            countingCars = 0;
-                            setTimeout(startInterval, 30000);
-                            breaks++;
+
+                            if (countingCars >= 210 && breaks <= 2) {
+                                clearInterval(sessionInterval);
+                                reset_redCar();
+                                reset_blueCar();
+                                reset_airplane();
+                                document.getElementById("gameScreen").style.display = "none";
+                                document.getElementById("redButton").style.display = "none";
+                                document.getElementById("blueButton").style.display = "none";
+                                document.getElementById("break").style.display = "inline";
+                                document.getElementById("iframe-element3").src = "../../timer/timer3.html";
+                                document.getElementById("iframe-element3").style.display = "inline";
+                                document.getElementById("iframe-element3").style.top = "0%";
+                                countingCars = 0;
+                                setTimeout(() => {
+                                    startIntervalFirstDay();
+                                    document.getElementById("iframe-element3").src = "";
+                                    document.getElementById("iframe-element3").style.display = "none";
+                                }, 30500);
+                                breaks++;
+                            }
                         }
-                        // jatos.submitResultData(saveResponsesTrainingData);
                     }, 1000);// (Maximal carSpeed)*1000
 
                 let sessionTimer = setTimeout(function timeCount() {
