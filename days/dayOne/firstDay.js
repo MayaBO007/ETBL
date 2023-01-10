@@ -56,9 +56,10 @@ async function trainingFirstDay() {
                     function carMove() {
                         let choseCar = randColor();
                         let carSpeed = randSpeedCar();
+                        let randCount = randCountAirplane();
                         reset_airplane();
                         buttonChoice = 0;
-                        if (count >= 20) {
+                        if (count >= randCount) {
                             clearInterval(sessionIntervalFirstDay);
                             document.getElementById("airplane").style.display = "inline";
                             document.getElementById("airplane").style.animationPlayState = "running";
@@ -127,7 +128,7 @@ async function trainingFirstDay() {
                                 }, carSpeed * 1000);
                             };
 
-                            if (countingCars >= 171 & breaks <= 3) {
+                            if (countingCars >= 210 && breaks <= 3) {
                                 reset_redCar();
                                 reset_blueCar();
                                 reset_airplane();

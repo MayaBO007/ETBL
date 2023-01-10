@@ -113,7 +113,7 @@ async function startTraining() {
                             };
 
                         };
-                        if (countingCars >= 171 & breaks <= 3) {
+                        if (countingCars >= 210 && breaks <= 3) {
                             clearInterval(sessionInterval);
                             reset_redCar();
                             reset_blueCar();
