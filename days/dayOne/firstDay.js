@@ -140,7 +140,7 @@ async function trainingFirstDay() {
                                 document.getElementById("break").style.display = "inline";
                                 document.getElementById("iframe-element3").src = "../../timer/timer3.html";
                                 document.getElementById("iframe-element3").style.display = "inline";
-                                document.getElementById("iframe-element3").style.top = "30%";
+                                document.getElementById("iframe-element3").style.top = "0%";
                                 countingCars = 0;
                                 setTimeout(() => {
                                     startIntervalFirstDay();
