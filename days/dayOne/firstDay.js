@@ -48,6 +48,7 @@ async function trainingFirstDay() {
             platform.saveSession(studySessionData);
             function startIntervalFirstDay() {
                 reset_gif();
+                let randCount = randCountAirplane();
                 document.getElementById("break").style.display = "none";
                 document.getElementById("redButton").style.display = "inline";
                 document.getElementById("blueButton").style.display = "inline";
@@ -56,7 +57,6 @@ async function trainingFirstDay() {
                     function carMove() {
                         let choseCar = randColor();
                         let carSpeed = randSpeedCar();
-                        let randCount = randCountAirplane();
                         reset_airplane();
                         buttonChoice = 0;
                         if (count >= randCount) {
