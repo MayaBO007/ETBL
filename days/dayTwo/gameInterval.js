@@ -114,7 +114,7 @@ async function startTraining() {
                             };
 
 
-                            if (countingCars >= 280 && breaks <= 2) {
+                            if (countingCars >= 290 && breaks <= 2) {
                                 clearInterval(sessionInterval);
                                 reset_redCar();
                                 reset_blueCar();
