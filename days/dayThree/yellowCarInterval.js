@@ -38,6 +38,7 @@ document.getElementById("blueButton").addEventListener("click", function () {
 let countYellow = 0;
 
 async function startIntervalYellow() {
+    let randCount = randCountAirplane();
     return new Promise(resolve => {
         sessionIntervalYellow = setInterval(
             function carMove() {
@@ -45,7 +46,7 @@ async function startIntervalYellow() {
                 let carSpeed = randSpeedCar();
                 reset_airplane();
                 buttonChoice = 0;
-                if (countYellow >= 20) {
+                if (countYellow >= randCount) {
                     clearInterval(sessionIntervalYellow);
                     setTimeout(startIntervalYellow, 2000);
                     document.getElementById("airplane").style.display = "inline";
