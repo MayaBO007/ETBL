@@ -128,7 +128,7 @@ async function startTraining() {
                                 document.getElementById("iframe-element3").style.top = "0%";
                                 countingCars = 0;
                                 setTimeout(() => {
-                                    startIntervalFirstDay();
+                                    startInterval();
                                     document.getElementById("iframe-element3").src = "";
                                     document.getElementById("iframe-element3").style.display = "none";
                                 }, 30500);
