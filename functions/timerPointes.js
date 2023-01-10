@@ -190,7 +190,6 @@ function showWinnings() {
     }
 };
 
-let breaks = [];
 
 function timeToFive() {
     let updatedDates = updateDates();
