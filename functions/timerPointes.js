@@ -12,11 +12,11 @@ async function onloadPics() {
 let now = null;
 function msCount() {
     msIntAll = setInterval(function setTimer() {
-        now = now + 10;
+        now = now + 100;
         if (now >= 1000000) {
             clearInterval(msIntAll);
         }
-    }, 10);
+    }, 100);
 };
 
 async function getIndexSessionData(data) {
