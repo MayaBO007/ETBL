@@ -47,7 +47,7 @@ async function trainingFirstDay() {
             studySessionData.doneDay1 = "startDayOne";
             platform.saveSession(studySessionData);
             function startIntervalFirstDay() {
-                reset_gif();
+                // reset_gif();
                 let randCount = randCountAirplane();
                 document.getElementById("break").style.display = "none";
                 document.getElementById("redButton").style.display = "inline";
@@ -138,9 +138,15 @@ async function trainingFirstDay() {
                                 document.getElementById("redButton").style.display = "none";
                                 document.getElementById("blueButton").style.display = "none";
                                 document.getElementById("break").style.display = "inline";
-                                document.getElementById("secCountdown").style.display = "inline";
+                                document.getElementById("iframe-element").src = "../../timer/timer3.html";
+                                document.getElementById("iframe-element").style.display = "inline";
+                                document.getElementById("iframe-element").style.top = "18%";
                                 countingCars = 0;
-                                setTimeout(startIntervalFirstDay, 30000);
+                                setTimeout(() => {
+                                    startIntervalFirstDay();
+                                    document.getElementById("iframe-element3").src = "";
+                                    document.getElementById("iframe-element3").style.display = "none";
+                                }, 30000);
                                 breaks++;
                             }
                         };
