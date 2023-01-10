@@ -41,6 +41,7 @@ async function startTraining() {
             studySessionData.doneDay2 = "startDayTwo";
             platform.saveSession(studySessionData);
             function startInterval() {
+                let randCount = randCountAirplane();
                 reset_gif();
                 document.getElementById("break").style.display = "none";
                 document.getElementById("redButton").style.display = "inline";
@@ -52,7 +53,7 @@ async function startTraining() {
                         let carSpeed = randSpeedCar();
                         reset_airplane();
                         buttonChoice = 0;
-                        if (count >= 20) {
+                        if (count >= randCount) {
                             clearInterval(sessionInterval);
                             setTimeout(startInterval, 2000);
                             document.getElementById("airplane").style.display = "inline";
