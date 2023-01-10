@@ -146,7 +146,7 @@ async function trainingFirstDay() {
                                     startIntervalFirstDay();
                                     document.getElementById("iframe-element3").src = "";
                                     document.getElementById("iframe-element3").style.display = "none";
-                                }, 30000);
+                                }, 30500);
                                 breaks++;
                             }
                         };
