@@ -121,7 +121,7 @@ async function startDevTest() {
                         setTimeout(startIntervalDevtest, 30000);
                         breaks++;
                     }
-                }, 0.9 * 1000);// (Maximal carSpeed)*1000
+                }, 1000);// (Maximal carSpeed)*1000
             let sessionTimerTest = setTimeout(function timeCount() {
                 platform.saveSession(responsesDev, false);
                 document.getElementById("blueButton").style.display = "none";

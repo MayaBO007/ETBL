@@ -128,7 +128,7 @@ async function startTraining() {
                             breaks++;
                         }
                         // jatos.submitResultData(saveResponsesTrainingData);
-                    }, 0.9 * 1000);// (Maximal carSpeed)*1000
+                    }, 1000);// (Maximal carSpeed)*1000
 
                 let sessionTimer = setTimeout(function timeCount() {
                     platform.saveSession(responsesTrainingData);

@@ -118,7 +118,7 @@ async function startInterval2Tests() {
                             setTimeout(reset_gif, 30600);
                         };
                     };
-                }, 0.9 * 1000);// (Maximal carSpeed)*1000
+                }, 1000);// (Maximal carSpeed)*1000
 
             let sessionTimer2test = setTimeout(function timeCount() {
                 // document.getElementById("blueButton").style.display = "none";
@@ -214,7 +214,7 @@ async function startInterval2Tests2() {
                     };
 
                 };
-            }, 0.9 * 1000);// (Maximal carSpeed)*1000
+            }, 1000);// (Maximal carSpeed)*1000
 
         let sessionTimer2test2 = setTimeout(function timeCount() {
             clearInterval(sessionInterval2Test2);
@@ -305,7 +305,7 @@ async function startInterval2Tests3() {
                     };
 
                 };
-            }, 0.9 * 1000);// (Maximal carSpeed)*1000
+            }, 1000);// (Maximal carSpeed)*1000
 
         let sessionTimer2test3 = setTimeout(function timeCount() {
             clearInterval(sessionInterval2Test3);

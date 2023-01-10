@@ -108,10 +108,10 @@ async function startIntervalYellow() {
 
                         setTimeout(() => {
                             reset_yellowCar();
-                        }, 0.9 * 1000);
+                        }, 1000);
                     }
                 };
-            }, 0.9 * 1000);// (Maximal carSpeed)*1000
+            }, 1000);// (Maximal carSpeed)*1000
 
         let sessionTimerYellow = setTimeout(function timeCount() {
             // document.getElementById("blueButton").style.display = "none";
