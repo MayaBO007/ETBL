@@ -10,7 +10,6 @@ function moveToDay() {
             // div.style.removeProperty("display");
             if ((typeof studySessionData == "undefined") || (studySessionData.doneInstructions == "")) {
                 platform.goToUrl("instructions/instructions.html");
-                studySessionData.doneInstructions = "stratIns";
             } else if (studySessionData.doneDay1 != "doneDayOne") {
                 if (studySessionData.doneDay1 == "") {
                     platform.goToUrl("days/dayOne/dayOne.html");
