@@ -128,7 +128,7 @@ async function trainingFirstDay() {
                                 }, carSpeed * 1000);
                             };
 
-                            if (countingCars >= 210 && breaks <= 3) {
+                            if (countingCars >= 35 && breaks <= 3) {
                                 reset_redCar();
                                 reset_blueCar();
                                 reset_airplane();
@@ -138,9 +138,9 @@ async function trainingFirstDay() {
                                 document.getElementById("redButton").style.display = "none";
                                 document.getElementById("blueButton").style.display = "none";
                                 document.getElementById("break").style.display = "inline";
-                                document.getElementById("iframe-element").src = "../../timer/timer3.html";
-                                document.getElementById("iframe-element").style.display = "inline";
-                                document.getElementById("iframe-element").style.top = "18%";
+                                document.getElementById("iframe-element3").src = "../../timer/timer3.html";
+                                document.getElementById("iframe-element3").style.display = "inline";
+                                document.getElementById("iframe-element3").style.top = "18%";
                                 countingCars = 0;
                                 setTimeout(() => {
                                     startIntervalFirstDay();
