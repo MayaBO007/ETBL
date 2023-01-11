@@ -275,3 +275,5 @@ const allCorrectFirstPressDev = [];
 const allChoicesDev = [];
 const devButton = [];
 
+let countingCars = null;
+let breaks = [];
