@@ -3,13 +3,15 @@ const responsesFirstData = {
     todayDate: getTodayDate(),
     correctRedPress: correctRedPress,
     correctBluePress: correctBluePress,
+    correctFirstRedPress: correctFirstRedPress,
+    correctFirstBluePress: correctFirstBluePress,
     incorrectRedPress: incorrectRedPress,
     incorrectBluePress: incorrectBluePress,
     redChoice: redChoice,
     blueChoice: blueChoice,
     allRedPresses: allRedPresses,
     allBluePresses: allBluePresses,
-    allCorrectFirstPress: allCorrectFirstPress,
+    // allCorrectFirstPress: allCorrectFirstPress,
     allChoices: allChoices,
     criterion: criterion
 };
@@ -84,8 +86,8 @@ async function trainingFirstDay() {
                                 document.getElementById("redButton").onclick = function () {
                                     buttonChoice = buttonChoice + 1;
                                     if (buttonChoice == 1) {
-                                        correctRedPress.push(now);
-                                        allCorrectFirstPress.push(now);
+                                        correctFirstRedPress.push(now);
+                                        // allCorrectFirstPress.push(now);
                                     } else {
                                         correctRedPress.push(now);
                                     }
@@ -114,8 +116,8 @@ async function trainingFirstDay() {
                                 document.getElementById("blueButton").onclick = function () {
                                     buttonChoice = buttonChoice + 1;
                                     if (buttonChoice == 1) {
-                                        correctBluePress.push(now);
-                                        allCorrectFirstPress.push(now);
+                                        correctFirstBluePress.push(now);
+                                        // allCorrectFirstPress.push(now);
                                     } else {
                                         correctBluePress.push(now);
                                     }
@@ -128,7 +130,7 @@ async function trainingFirstDay() {
                                 }, carSpeed * 1000);
                             };
 
-                            if (countingCars >= 290 && breaks <= 2) {
+                            if (countingCars >= 280 && breaks <= 2) {
                                 reset_redCar();
                                 reset_blueCar();
                                 reset_airplane();

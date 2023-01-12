@@ -2,13 +2,15 @@
 const responsesSwitch = {
     correctRedPressSwitch: correctRedPressSwitch,
     correctBluePressSwitch: correctBluePressSwitch,
+    correctFirstRedPressSwitch: correctFirstRedPressSwitch,
+    correctFirstBluePressSwitch: correctFirstBluePressSwitch,
     incorrectRedPressSwitch: incorrectRedPressSwitch,
     incorrectBluePressSwitch: incorrectBluePressSwitch,
     redChoiceSwitch: redChoiceSwitch,
     blueChoiceSwitch: blueChoiceSwitch,
     allRedPressesSwitch: allRedPressesSwitch,
     allBluePressesSwitch: allBluePressesSwitch,
-    allCorrectFirstPressSwitch: allCorrectFirstPressSwitch,
+    // allCorrectFirstPressSwitch: allCorrectFirstPressSwitch,
     allChoicesSwitch: allChoicesSwitch
 };
 
@@ -51,8 +53,8 @@ async function startIntervalSwitch() {
                         document.getElementById("redButton").onclick = function () {
                             buttonChoice = buttonChoice + 1;
                             if (buttonChoice == 1) {
-                                correctRedPressSwitch.push(now);
-                                allCorrectFirstPressSwitch.push(now);
+                                correctFirstRedPressSwitch.push(now);
+                                // allCorrectFirstPressSwitch.push(now);
                             } else {
                                 correctRedPressSwitch.push(now);
                             }
@@ -80,8 +82,8 @@ async function startIntervalSwitch() {
                         document.getElementById("blueButton").onclick = function () {
                             buttonChoice = buttonChoice + 1;
                             if (buttonChoice == 1) {
-                                correctBluePressSwitch.push(now);
-                                allCorrectFirstPressSwitch.push(now);
+                                correctFirstBluePressSwitch.push(now);
+                                // allCorrectFirstPressSwitch.push(now);
                             } else {
                                 correctBluePressSwitch.push(now);
                             }

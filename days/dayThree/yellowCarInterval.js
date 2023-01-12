@@ -2,13 +2,16 @@
 const responsesYellow = {
     correctRedPressYellow: correctRedPressYellow,
     correctBluePressYellow: correctBluePressYellow,
+    correctFirstRedPressYellow: correctFirstRedPressYellow,
+    correctFirstBluePressYellow: correctFirstBluePressYellow,
     incorrectRedPressYellow: incorrectRedPressYellow,
     incorrectBluePressYellow: incorrectBluePressYellow,
     redChoiceYellow: redChoiceYellow,
     blueChoiceYellow: blueChoiceYellow,
+    yellowChoiceYellow: yellowChoiceYellow,
     allRedPressesYellow: allRedPressesYellow,
     allBluePressesYellow: allBluePressesYellow,
-    allCorrectFirstPressYellow: allCorrectFirstPressYellow,
+    // allCorrectFirstPressYellow: allCorrectFirstPressYellow,
     allChoicesYellow: allChoicesYellow,
     howManyYellows: howManyYellows
 };
@@ -62,8 +65,8 @@ async function startIntervalYellow() {
                         document.getElementById("redButton").onclick = function () {
                             buttonChoice = buttonChoice + 1;
                             if (buttonChoice == 1) {
-                                correctRedPressYellow.push(now);
-                                allCorrectFirstPressYellow.push(now);
+                                correctFirstRedPressYellow.push(now);
+                                // allCorrectFirstPressYellow.push(now);
                             } else {
                                 correctRedPressYellow.push(now);
                             }
@@ -91,8 +94,8 @@ async function startIntervalYellow() {
                         document.getElementById("blueButton").onclick = function () {
                             buttonChoice = buttonChoice + 1;
                             if (buttonChoice == 1) {
-                                correctBluePressYellow.push(now);
-                                allCorrectFirstPressYellow.push(now);
+                                correctFirstBluePressYellow.push(now);
+                                // allCorrectFirstPressYellow.push(now);
                             } else {
                                 correctBluePressYellow.push(now);
                             }

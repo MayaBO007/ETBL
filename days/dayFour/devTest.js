@@ -3,13 +3,15 @@
 const responsesDev = {
     correctRedPressDevtest: correctRedPressDevtest,
     correctBluePressDevtest: correctBluePressDevtest,
+    correctFirstRedPressDevtest: correctFirstRedPressDevtest,
+    correctFirstBluePressDevtest: correctFirstBluePressDevtest,
     incorrectRedPressDevtest: incorrectRedPressDevtest,
     incorrectBluePressDevtest: incorrectBluePressDevtest,
     redChoiceDev: redChoiceDev,
     blueChoiceDev: blueChoiceDev,
     allRedPressesDev: allRedPressesDev,
     allBluePressesDev: allBluePressesDev,
-    allCorrectFirstPressDev: allCorrectFirstPressDev,
+    // allCorrectFirstPressDev: allCorrectFirstPressDev,
     allChoicesDev: allChoicesDev,
     devButton: devButton
 };
@@ -66,8 +68,8 @@ async function startDevTest() {
                             document.getElementById("redButton").onclick = function () {
                                 buttonChoice = buttonChoice + 1;
                                 if (buttonChoice == 1) {
-                                    correctRedPressDevtest.push(now);
-                                    allCorrectFirstPressDev.push(now);
+                                    correctFirstRedPressDevtest.push(now);
+                                    // allCorrectFirstPressDev.push(now);
                                 } else {
                                     correctRedPressDevtest.push(now);
                                 }
@@ -95,8 +97,8 @@ async function startDevTest() {
                             document.getElementById("blueButton").onclick = function () {
                                 buttonChoice = buttonChoice + 1;
                                 if (buttonChoice == 1) {
-                                    correctBluePressDevtest.push(now);
-                                    allCorrectFirstPressDev.push(now);
+                                    correctFirstBluePressDevtest.push(now);
+                                    // allCorrectFirstPressDev.push(now);
                                 } else {
                                     correctBluePressDevtest.push(now);
                                 }
@@ -108,7 +110,7 @@ async function startDevTest() {
                             }, carSpeed * 1000);
                         }
 
-                        if (countingCars >= 252 & breaks <= 2) {
+                        if (countingCars >= 280 & breaks <= 2) {
                             clearInterval(sessionIntervalTest);
                             reset_redCar();
                             reset_blueCar();

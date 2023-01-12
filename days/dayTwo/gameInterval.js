@@ -2,6 +2,8 @@
 const responsesTrainingData = {
     correctRedPress: correctRedPress,
     correctBluePress: correctBluePress,
+    correctFirstRedPress: correctFirstRedPress,
+    correctFirstBluePress: correctFirstBluePress,
     incorrectRedPress: incorrectRedPress,
     incorrectBluePress: incorrectBluePress,
     redChoice: redChoice,
@@ -71,8 +73,8 @@ async function startTraining() {
                                 document.getElementById("redButton").onclick = function () {
                                     buttonChoice = buttonChoice + 1;
                                     if (buttonChoice == 1) {
-                                        correctRedPress.push(now);
-                                        allCorrectFirstPress.push(now);
+                                        correctFirstRedPress.push(now);
+                                        // allCorrectFirstPress.push(now);
                                     } else {
                                         correctRedPress.push(now);
                                     }
@@ -100,8 +102,8 @@ async function startTraining() {
                                 document.getElementById("blueButton").onclick = function () {
                                     buttonChoice = buttonChoice + 1;
                                     if (buttonChoice == 1) {
-                                        correctBluePress.push(now);
-                                        allCorrectFirstPress.push(now);
+                                        correctFirstBluePress.push(now);
+                                        // allCorrectFirstPress.push(now);
                                     } else {
                                         correctBluePress.push(now);
                                     }
@@ -114,7 +116,7 @@ async function startTraining() {
                             };
 
 
-                            if (countingCars >= 205 && breaks <= 2) {
+                            if (countingCars >= 280 && breaks <= 2) {
                                 clearInterval(sessionInterval);
                                 reset_redCar();
                                 reset_blueCar();
