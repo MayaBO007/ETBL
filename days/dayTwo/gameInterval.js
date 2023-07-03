@@ -33,7 +33,7 @@ async function startTraining() {
     return new Promise(resolve => {
         breaks = 0;
         countingCars = 0;
-        document.getElementById("ins1").style.display = "none";
+        // document.getElementById("ins1").style.display = "none";
         document.getElementById("startButton").style.display = "inline";
         document.getElementById("redButton").style.display = "inline";
         document.getElementById("blueButton").style.display = "inline";
