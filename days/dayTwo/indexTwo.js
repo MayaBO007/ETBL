@@ -6,7 +6,7 @@ function timeline() {
             getIndexSessionData(data).then((i) => {
                 studySessionData = data[i];
                 let updatedDates = updateDates();
-                if (updatedDates.fullDate.getDate() == updatedDates.yesterday.getDate()) { //|| yesterdayPlusOne.getDate() - fullDate.getDate() > 25 ) {
+                if (updatedDates.fullDate.getDate() == updatedDates.yesterdayPlusOne.getDate()) { //|| yesterdayPlusOne.getDate() - fullDate.getDate() > 25 ) {
                     if (window.matchMedia("(orientation: landscape)").matches) {
                         document.getElementById("fiveAM").style.display = "inline";
                     } else {
