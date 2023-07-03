@@ -27,7 +27,6 @@ let count = 0; // counter for iterations
 // 1=red, 2=blue buttons
 let buttonChoice = null;
 let sessionInterval = null;
-let startGame = null;
 
 async function startTraining() {
     return new Promise(resolve => {
