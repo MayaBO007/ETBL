@@ -33,7 +33,6 @@ async function startTraining() {
     return new Promise(resolve => {
         breaks = 0;
         countingCars = 0;
-        document.getElementById("ins1").style.display = "none";
         document.getElementById("startButton").style.display = "inline";
         document.getElementById("redButton").style.display = "inline";
         document.getElementById("blueButton").style.display = "inline";
@@ -43,8 +42,8 @@ async function startTraining() {
             my_awesome_script.setAttribute('src', '../../functions/orientation.js');
             // my_awesome_script.src = "../functions/orientation.js";
             document.body.appendChild(my_awesome_script);
-            document.getElementById("startButton").style.display = "none";
-            studySessionData.doneDay2 = "startDayTwo";
+            // document.getElementById("startButton").style.display = "none";
+            // studySessionData.doneDay2 = "startDayTwo";
             platform.saveSession(studySessionData);
             function startInterval() {
                 let randCount = randCountAirplane();
