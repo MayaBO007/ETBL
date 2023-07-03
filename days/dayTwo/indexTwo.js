@@ -6,7 +6,7 @@ function timeline() {
             getIndexSessionData(data).then((i) => {
                 studySessionData = data[i];
                 let updatedDates = updateDates();
-                if (updatedDates.fullDate.getDate() == updatedDates.yesterdayPlusOne.getDate()) { //|| yesterdayPlusOne.getDate() - fullDate.getDate() > 25 ) {
+                if (updatedDates.fullDate.getDate() == updatedDates.yesterday.getDate()) { //|| yesterdayPlusOne.getDate() - fullDate.getDate() > 25 ) {
                     if (window.matchMedia("(orientation: landscape)").matches) {
                         document.getElementById("fiveAM").style.display = "inline";
                     } else {
@@ -29,13 +29,16 @@ function timeline() {
                             if (doneDayTwo == "doneDayTwo") {
                                 studySessionData.doneDay2 = "doneDayTwo";
                                 studySessionData.expDaysDate = updatedDates.fullDate;
-                                platform.saveSession(studySessionData, true)
-                                document.getElementById("endDayMsg").style.display = "inline";
-                                document.getElementById("endDayMsg").addEventListener("click", function () {
-                                    showWinnings()
-                                    setTimeout(() => {
-                                        platform.goToUrl("days/dayThree/dayThree.html");
-                                    }, 7000)
+                                platform.saveSession(studySessionData, true);
+                                platform.getAllSessions().then((data) => {
+                                    console.log(data);
+                                    document.getElementById("endDayMsg").style.display = "inline";
+                                    document.getElementById("endDayMsg").addEventListener("click", function () {
+                                        showWinnings()
+                                        setTimeout(() => {
+                                            platform.goToUrl("days/dayThree/dayThree.html");
+                                        }, 7000)
+                                    })
                                 })
                             }
                         }
