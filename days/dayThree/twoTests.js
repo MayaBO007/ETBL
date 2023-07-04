@@ -38,6 +38,7 @@ async function start2tests() {
                             let endSwitch = await startIntervalSwitch();
                             if (endSwitch == "done2") {
                                 setTimeout(() => {
+                                    clearInterval(sessionIntervalSwitch);
                                     document.getElementById("startAfterSwitchTestButton").style.display = "inline";
                                     document.getElementById("iframe-element2").style.top = "1%"
                                     document.getElementById("iframe-element2").src = "../../timer/timer2.html";
@@ -76,6 +77,7 @@ async function start2tests() {
                                                 let startYellow = async function () {
                                                     let endYellowTest = await startIntervalYellow();
                                                     if (endYellowTest == "done4") {
+                                                        clearInterval(sessionIntervalYellow);
                                                         reset_yellowCar();
                                                         reset_blueCar();
                                                         reset_redCar();
