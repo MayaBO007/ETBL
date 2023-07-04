@@ -27,7 +27,6 @@ let count = 0; // counter for iterations
 // 1=red, 2=blue buttons
 let buttonChoice = null;
 let sessionInterval = null;
-let startGame = null;
 
 
 let countTimeout1 = 0;
@@ -43,7 +42,6 @@ async function startInterval2Tests() {
                     document.getElementById("redButton").style.display = "inline";
                     document.getElementById("blueButton").style.display = "inline";
                     document.getElementById("gameScreen").style.display = "inline";
-                    document.getElementById("secCountdown").style.display = "none";
                     reset_airplane();
                     buttonChoice = 0;
                     if (count >= randCount) {
