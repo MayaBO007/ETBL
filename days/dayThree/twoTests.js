@@ -13,8 +13,8 @@ async function start2tests() {
             // my_awesome_script.src = "../functions/orientation.js";
             document.body.appendChild(my_awesome_script);
             document.getElementById("startButton").style.display = "none";
-            studySessionData.doneDay3 = "startDayThree";
-            platform.saveSession(studySessionData);
+            // studySessionData.doneDay3 = "startDayThree";
+            // platform.saveSession(studySessionData);
             getMillisec();
             let startIntervalTest = async function () {
                 let startSwitch = await startInterval2Tests();
