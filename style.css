@@ -132,7 +132,7 @@
 
 #redButton {
     position: absolute;
-    left: 0%;
+    left: 80%;
     top: 35%;
     width: 20%;
     height: 34%;
@@ -151,7 +151,7 @@
 
 #blueButton {
     position: absolute;
-    left: 80%;
+    left: 0%;
     top: 35%;
     width: 20%;
     height: 34%;
