@@ -42,7 +42,7 @@ async function startTraining() {
             my_awesome_script.setAttribute('src', '../../functions/orientation.js');
             // my_awesome_script.src = "../functions/orientation.js";
             document.body.appendChild(my_awesome_script);
-            // document.getElementById("startButton").style.display = "none";
+            document.getElementById("startButton").style.display = "none";
             // studySessionData.doneDay2 = "startDayTwo";
             //platform.saveSession(studySessionData);
             function startInterval() {
