@@ -33,8 +33,8 @@ function timeline() {
                                 // my_awesome_script.src = "../functions/orientation.js";
                                 document.body.appendChild(my_awesome_script);
                                 document.getElementById("startButton").style.display = "none";
-                                studySessionData.doneDay4 = "stratDayFour";
-                                platform.saveSession(studySessionData);
+                                // studySessionData.doneDay4 = "stratDayFour";
+                                // platform.saveSession(studySessionData);
                                 getMillisec();
                                 let startIntervalTest = async function () {
                                     let startTrainning = await startInterval2Tests2();
