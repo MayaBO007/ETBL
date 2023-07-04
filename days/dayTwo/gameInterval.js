@@ -44,7 +44,7 @@ async function startTraining() {
             document.body.appendChild(my_awesome_script);
             // document.getElementById("startButton").style.display = "none";
             // studySessionData.doneDay2 = "startDayTwo";
-            platform.saveSession(studySessionData);
+            //platform.saveSession(studySessionData);
             function startInterval() {
                 let randCount = randCountAirplane();
                 reset_gif();
