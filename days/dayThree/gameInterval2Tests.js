@@ -42,7 +42,6 @@ async function startInterval2Tests() {
                     document.getElementById("redButton").style.display = "inline";
                     document.getElementById("blueButton").style.display = "inline";
                     document.getElementById("gameScreen").style.display = "inline";
-                    //document.getElementById("secCountdown").style.display = "none";
                     reset_airplane();
                     buttonChoice = 0;
                     if (count >= randCount) {
