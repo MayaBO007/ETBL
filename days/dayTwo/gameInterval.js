@@ -27,6 +27,7 @@ let count = 0; // counter for iterations
 // 1=red, 2=blue buttons
 let buttonChoice = null;
 let sessionInterval = null;
+let startGame = null;
 
 async function startTraining() {
     return new Promise(resolve => {
@@ -41,9 +42,9 @@ async function startTraining() {
             my_awesome_script.setAttribute('src', '../../functions/orientation.js');
             // my_awesome_script.src = "../functions/orientation.js";
             document.body.appendChild(my_awesome_script);
-            document.getElementById("startButton").style.display = "none";
+            // document.getElementById("startButton").style.display = "none";
             // studySessionData.doneDay2 = "startDayTwo";
-            // platform.saveSession(studySessionData);
+            platform.saveSession(studySessionData);
             function startInterval() {
                 let randCount = randCountAirplane();
                 reset_gif();
